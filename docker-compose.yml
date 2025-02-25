@@ -1,0 +1,19 @@
+services: 
+  db: 
+    image: mysql:8.0  
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"  
+    volumes:
+      - "C:/Users/lily/Desktop/IT alapok privát/PRIV DATA SC 1216 - 2024/Sentiment analysis API/db/init.sql:/docker-entrypoint-initdb.d/init.sql"
+
+  api:
+    build:
+      context: ./app
+    container_name: sentimentflaskapp
+    ports:
+      - "5000:5000"  
+    depends_on:
+      - db
