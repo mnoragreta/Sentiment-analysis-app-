@@ -8,20 +8,20 @@ This project is a Sentiment Analysis API built using Flask, Random Forest, and T
 
 Project Structure
 
-├── app/                 # Contains the Flask application
-│   ├── app.py           # Main Flask app handling requests
-│   ├── Dockerfile       # Dockerfile for API container
-│   ├── index.html       # Frontend interface for testing API
-│   ├── vectorization.pkl # TF-IDF vectorizer
-│   ├── randomforest.pkl # Trained Random Forest model
-│   ├── requirements.txt # Dependencies for Flask app
-│
-├── dataset/             # (Optional) Raw dataset used for training
-│
-├── db/                  # Contains MySQL database setup
-│   ├── init.sql         # SQL file for database initialization
-│
-├── docker-compose.yml   # Docker Compose configuration file
+-├── app/                 # Contains the Flask application
+-│   ├── app.py           # Main Flask app handling requests
+-│   ├── Dockerfile       # Dockerfile for API container
+-│   ├── index.html       # Frontend interface for testing API
+-│   ├── vectorization.pkl # TF-IDF vectorizer
+-│   ├── randomforest.pkl # Trained Random Forest model
+-│   ├── requirements.txt # Dependencies for Flask app
+-│
+-├── dataset/             # (Optional) Raw dataset used for training
+-│
+-├── db/                  # Contains MySQL database setup
+-│   ├── init.sql         # SQL file for database initialization
+-│
+-├── docker-compose.yml   # Docker Compose configuration file
 
 
 How It Works
